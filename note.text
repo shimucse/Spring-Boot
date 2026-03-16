@@ -1,0 +1,41 @@
+In Spring Initializr, add:
+
+Spring Web
+Thymeleaf
+Spring Data JPA
+MySQL Driver
+Spring Boot DevTools
+Spring Security
+
+Project sturcture:
+src/main/java
+    |
+    |-- entity
+    |      Employee.java
+    |
+    |-- dao
+    |      EmployeeRepository.java
+    |
+    |-- service
+    |      EmployeeService.java
+    |      EmployeeServiceImpl.java
+    |
+    |-- rest
+    |      EmployeeRestController.java
+    |
+    |-- exception
+           StudentErrorResponse.java
+           StudentNotFoundException.java
+           RestExceptionHandler.java
+           
+Application.properties:
+# Application name
+spring.application.name=section4-rest-crud-api
+
+# JDBC properties
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_directory
+spring.datasource.username=springstudent
+spring.datasource.password=springstudent
+
+# Turn off Spring Boot banner
+#spring.main.banner-mode=off

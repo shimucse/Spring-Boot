@@ -1,0 +1,4 @@
+#for get in postMan select basic authentication
+
+#.requestMatchers(HttpMethod.GET, "/api/employees").permitAll() (no authentication required)
+

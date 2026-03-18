@@ -39,3 +39,14 @@ spring.datasource.password=springstudent
 
 # Turn off Spring Boot banner
 #spring.main.banner-mode=off
+ 
+
+#Reduce logging level. Set logging level to warn
+logging.level.root = warn
+
+#Show JPA/Hibernate logging messages
+#Log SQL statement
+logging.level.org.hibernate.SQL = trace
+
+#Log values for SQL statements
+logging.level.org.hibernate.orm.jdbc.bind = trace

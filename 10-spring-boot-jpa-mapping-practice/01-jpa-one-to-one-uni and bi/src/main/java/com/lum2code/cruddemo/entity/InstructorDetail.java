@@ -21,7 +21,20 @@ public class InstructorDetail {
 
    @Column(name="hobby")
    private String hobby;
-   public InstructorDetail(){
+
+   //Bidirectional link to Instructor
+    @OneToOne(mappedBy = "instructorDetail", cascade = CascadeType.ALL)
+    private Instructor instructor;
+
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+    public InstructorDetail(){
 
    }
 
